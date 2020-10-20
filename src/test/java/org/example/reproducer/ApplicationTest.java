@@ -6,7 +6,7 @@ import org.springframework.test.context.ContextConfiguration;
 
 @SpringBootTest
 @ContextConfiguration(initializers = RabbitMQContainerApplicationInitializer.class)
-public class ApplicationIT {
+public class ApplicationTest {
 
   @Test
   public void contextLoads() {
