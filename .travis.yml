@@ -1,5 +1,6 @@
 language: java
 dist: bionic
+virt: vm
 arch: arm64-graviton2
 
 jdk:
