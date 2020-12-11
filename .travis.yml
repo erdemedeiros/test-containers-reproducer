@@ -1,20 +1,13 @@
-os: linux
+language: java
 dist: bionic
 virt: lxd
-group: edge
 arch: arm64-graviton2
-language: java
 
 jdk:
   - openjdk11
 
 services:
   - docker
-
-before_install:
-  - sudo apt update
-  - sudo apt install maven
-  - mvn --version
 
 script:
   - mvn clean verify -B
